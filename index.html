@@ -8,6 +8,7 @@
     <style>
         :root {
             --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
             --bg-color: #0f172a;
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
@@ -58,6 +59,24 @@
             color: var(--primary-color);
         }
 
+        .cv-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 1.1rem;
+            margin-top: 2rem;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .cv-button:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
         .container {
             max-width: 1000px;
             margin: 0 auto;
@@ -92,6 +111,11 @@
             padding: 1.5rem;
             border-radius: 8px;
             border: 1px solid #334155;
+            transition: transform 0.3s;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
         }
 
         .skill-card h4 {
@@ -113,6 +137,11 @@
             padding: 2rem;
             border-radius: 8px;
             border: 1px solid #334155;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover, .education-card:hover {
+            transform: translateY(-5px);
         }
 
         .project-card h4, .education-card h4 {
@@ -168,6 +197,12 @@
                 <a href="https://github.com/sunagnydn" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com/in/suna-gunaydın-5b8aa8251" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="mailto:gunaydinsuna06@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            
+            <div>
+                <a href="Suna_Gunaydin_CV_Modern_Linkli.pdf" target="_blank" class="cv-button">
+                    <i class="fas fa-file-pdf" style="margin-right: 8px;"></i> CV'yi Görüntüle
+                </a>
             </div>
         </div>
     </header>
