@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suna Günaydın | Portfolyo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #0f172a;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --card-bg: #1e293b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: linear-gradient(to bottom, #0f172a, #1e293b);
+            border-bottom: 1px solid #334155;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        .social-links a {
+            color: var(--text-muted);
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        section h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        .about-text {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        .skill-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .skill-card ul {
+            list-style-type: none;
+            color: var(--text-muted);
+        }
+
+        .skill-card ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card, .education-card {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        .project-card h4, .education-card h4 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .tags {
+            margin: 1rem 0;
+        }
+
+        .tag {
+            background-color: rgba(37, 99, 235, 0.2);
+            color: #60a5fa;
+            padding: 0.2rem 0.8rem;
+            border-radius: 999px;
+            font-size: 0.875rem;
+            margin-right: 0.5rem;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p, .education-card p {
+            color: var(--text-muted);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            color: var(--text-muted);
+        }
+
+        .contact-info i {
+            width: 25px;
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero h2 { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="hero">
+            <h1>Suna GÜNAYDIN</h1>
+            <h2>Bilgisayar Mühendisliği Öğrencisi & Yazılım Geliştirici</h2>
+            <div class="social-links">
+                <a href="https://github.com/sunagnydn" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/suna-gunaydın-5b8aa8251" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:gunaydinsuna06@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section id="about">
+            <h3>Hakkımda</h3>
+            <p class="about-text">
+                İnönü Üniversitesi Bilgisayar Mühendisliği bölümünde öğrenim gören, mobil ve web teknolojileri alanında kendini geliştiren bir yazılım geliştiricisiyim. Öğrenmeye açık, analitik düşünebilen, problem çözme becerileri güçlü ve takım çalışmasına uyumlu bir adayım. Temiz kod, düzenli yapı ve hata tespiti odağıyla projeler geliştiriyorum.
+            </p>
+        </section>
+
+        <section id="education">
+            <h3>Eğitim</h3>
+            <div class="education-card">
+                <h4>İnönü Üniversitesi</h4>
+                <p style="color: var(--primary-color); margin-bottom: 0.5rem;">Bilgisayar Mühendisliği Lisans Programı</p>
+                <p><i class="far fa-calendar-alt"></i> Eylül 2022 - Devam Ediyor</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h3>Teknik Beceriler</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4><i class="fas fa-code"></i> Programlama</h4>
+                    <ul>
+                        <li>Java & Kotlin</li>
+                        <li>C# & Python</li>
+                        <li>Temel seviye C & Assembly</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h4><i class="fas fa-globe"></i> Web Teknolojileri</h4>
+                    <ul>
+                        <li>HTML5 & CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h4><i class="fas fa-mobile-alt"></i> Mobil & Veritabanı</h4>
+                    <ul>
+                        <li>Android Studio</li>
+                        <li>Firebase & Firestore</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h4><i class="fas fa-tools"></i> Araçlar & Diğer</h4>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>Arduino Tabanlı Projeler</li>
+                        <li>İngilizce (B2 - Üst Orta Seviye)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h3>Öne Çıkan Projeler</h3>
+            <div class="project-card">
+                <h4>Kod Müfettişi</h4>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Kod Analizi</span>
+                    <span class="tag">Semantik Arama</span>
+                    <span class="tag">Veri Saklama</span>
+                </div>
+                <p>
+                    Yazılımcıların daha temiz, düzenli ve hatasız kod yazmasına yardımcı olan akıllı bir kod asistanı ve arama motorudur. 
+                    <br><br>
+                    <strong>Özellikler:</strong>
+                    <ul style="color: var(--text-muted); margin-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>Kodu inceleyen analiz bölümü ve onaylanan kodları hafızasına alan akıllı kütüphane.</li>
+                        <li>Kısa değişken isimleri, düzensiz yazım tarzları ve gereksiz kod kullanımlarını tespit eder.</li>
+                        <li>Kelime bazlı arama yerine kodun işlevini anlayan semantik arama deneyimi sunar.</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3>İletişim</h3>
+            <div class="contact-info">
+                <div><i class="fas fa-phone"></i> +90 546 228 05 15</div>
+                <div><i class="fas fa-envelope"></i> gunaydinsuna06@gmail.com</div>
+                <div><i class="fab fa-linkedin"></i> linkedin.com/in/suna-gunaydın-5b8aa8251</div>
+                <div><i class="fab fa-github"></i> github.com/sunagnydn</div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
