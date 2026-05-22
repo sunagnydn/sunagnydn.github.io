@@ -172,12 +172,27 @@
         .contact-info {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
-            color: var(--text-muted);
+            gap: 1.2rem;
         }
 
-        .contact-info i {
-            width: 25px;
+        .contact-item {
+            display: flex;
+            align-items: center;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s, transform 0.2s;
+            width: fit-content;
+        }
+
+        .contact-item:hover {
+            color: var(--text-main);
+            transform: translateX(5px);
+        }
+
+        .contact-item i {
+            width: 30px;
+            font-size: 1.2rem;
             color: var(--primary-color);
         }
 
@@ -288,10 +303,18 @@
         <section id="contact">
             <h3>İletişim</h3>
             <div class="contact-info">
-                <div><i class="fas fa-phone"></i> +90 546 228 05 15</div>
-                <div><i class="fas fa-envelope"></i> gunaydinsuna06@gmail.com</div>
-                <div><i class="fab fa-linkedin"></i> linkedin.com/in/suna-gunaydın-5b8aa8251</div>
-                <div><i class="fab fa-github"></i> github.com/sunagnydn</div>
+                <a href="tel:+905462280515" class="contact-item">
+                    <i class="fas fa-phone"></i> +90 546 228 05 15
+                </a>
+                <a href="mailto:gunaydinsuna06@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i> gunaydinsuna06@gmail.com
+                </a>
+                <a href="https://linkedin.com/in/suna-gunaydın-5b8aa8251" target="_blank" class="contact-item">
+                    <i class="fab fa-linkedin"></i> linkedin.com/in/suna-gunaydın-5b8aa8251
+                </a>
+                <a href="https://github.com/sunagnydn" target="_blank" class="contact-item">
+                    <i class="fab fa-github"></i> github.com/sunagnydn
+                </a>
             </div>
         </section>
 
